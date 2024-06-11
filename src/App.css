@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #3d3e3f;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 1em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #003d80;
+}
+
+nav button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav button:hover {
+  background: #003d80;
+}
+
+.container {
+  max-width: 100%;
+  margin: 2em 2em;
+  padding: 2em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover{
+  background: #003d80;
+
+}
+
+input:focus {
+  border-color: #3d3e3f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.ask-button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+ul {
+  counter-reset: item;
+}
+li {
+  display: block;
+}
+li:before {
+  content: counters(item, ".")". ";
+  counter-increment: item;
+}
+
+.questions-li{
+  margin: 1em;
+
+}
+
+.ask-button:hover {
+  background: #003d80;
+}
+
+.answer {
+  margin-top: 1em;
+  padding: 1em;
+  background: #e9ecef;
+  border-radius: 4px;
+}
